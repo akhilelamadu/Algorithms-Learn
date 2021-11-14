@@ -16,7 +16,7 @@ int gcd(int l, int s)
 int main()
 {
     cout<<gcd(20,8)<<"\n";
-    cout<<gcd(8,20);
+    cout<<gcd(60,96);
 
     return 0;
 
