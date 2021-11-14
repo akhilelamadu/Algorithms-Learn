@@ -1,2 +1,2 @@
 # Algorithms-Learn
-# repo made to learn alogorithms and datastructures
+repo made to learn alogorithms and datastructures
