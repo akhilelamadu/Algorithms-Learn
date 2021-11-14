@@ -1,9 +1,8 @@
 #include <iostream>
 using namespace std;
 
-int gcd(int a, int b)
+int gcd(int l, int s)
 {   
-    int l=a,s=b;
     int temp;
     while(s!=0)
     {   
