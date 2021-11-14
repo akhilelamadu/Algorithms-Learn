@@ -4,12 +4,6 @@ using namespace std;
 int gcd(int a, int b)
 {   
     int l=a,s=b;
-    if(a<b)
-    {
-        s=a;
-        l=b;
-    }
-
     int temp;
     while(s!=0)
     {   
