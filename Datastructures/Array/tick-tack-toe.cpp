@@ -1,6 +1,6 @@
 #include<iostream>
 
-void printboard(char board[][3])
+void printboard(char *board[][3])
 {
 int i,j =0;
     for ( i = 0; i <3; i++)
@@ -18,7 +18,7 @@ int main()
     printf("This is a sample program to play  tick-tack-toe \n");
     char first[3][3]={{'.','.','.'},{'.','.','.'},{'.','.','.'}};
     char A[3][3];
-    printboard(first);
+    printboard(&first);
     printf("player one wil be playing X \nPlayer two will be playing O\n");
     
     int over= 0;
