@@ -1,6 +1,6 @@
 #include<iostream>
 
-void printboard(char *board[][3])
+void printboard(char board[][3])
 {
 int i,j =0;
     for ( i = 0; i <3; i++)
@@ -13,35 +13,57 @@ int i,j =0;
     }
 }
 
+int status(char board[][3])
+{
+    
+}
+
+
+
+
+
+
+
+
+
 int main()
 {
     printf("This is a sample program to play  tick-tack-toe \n");
     char first[3][3]={{'.','.','.'},{'.','.','.'},{'.','.','.'}};
-    char A[3][3];
-    printboard(&first);
+    printboard(first);
     printf("player one wil be playing X \nPlayer two will be playing O\n");
     
     int over= 0;
-    while(1)
+    int play=1;//asking not yet done
+
+    while(play)
     {   
-        int cell;
-        printf("Player one please enter number from [1 to 9]");
-        scanf("%d",&cell);
-        //over =p1play();
+        int r,c;
+
+        printf("Player one please enter [][]");
+        scanf("%d",&r,&c);
+        first[--r][--c]='X';
+
+        over =status(first);
         if(over==1)
         {
             printf("Player 1 won");
             break;
         }
         
-        //over =p2play();
+        printf("Player one please enter [][]");
+        scanf("%d",&r,&c);
+        first[--r][--c]='X';
+
+
+        over =status(first);
         if(over==1)
         {
             printf("Player 2 won");
             break;
         }
 
-        printf("Player two please enter number from [1 to 9]");
+        
     }
 
 
