@@ -18,14 +18,6 @@ int status(char board[][3])
     
 }
 
-
-
-
-
-
-
-
-
 int main()
 {
     printf("This is a sample program to play  tick-tack-toe \n");
