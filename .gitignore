@@ -3,4 +3,4 @@
 
 #ignoring executable
 
-.exe
+*.exe
