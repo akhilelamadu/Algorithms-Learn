@@ -2,6 +2,31 @@
 #include <cstdlib>
 #include <ctime>
 
+
+/* Linear search */
+void linear_search(int *arr, int *num, int *digit )
+{
+   int flag=0, i;
+   for(i=0;i<*num;i++)
+   {
+      if(*digit==*arr)
+      {
+         flag =1;
+         break;
+      }
+      arr++;
+   }
+
+   if(flag==0)
+   {
+      printf("No search found\n");
+   }
+   else
+   {
+      printf ("The digit is located at %d position",++i);
+   }
+}
+
 int main()
 {  
    int i;
@@ -19,34 +44,19 @@ int main()
 
    /* Print and store n random numbers from 0 to 10 */
    printf("The list is :");
-   for(i = 0 ; i < n ; i++ )
+   for(int i = 0 ; i < n ; i++ )
    {
       A[i]=rand()% 10;
       printf("%d ", A[i] );
    }
 
    /* Searching */
-   int d, flag=0;
+   int d;
    printf("\nEnter the search  digit\n");
    scanf("%d",&d);
 
-   for(i=0;i<n;i++)
-   {
-      if(d==A[i])
-      {
-         flag =1;
-         break;
-      }
-   }
-
-   if(flag==0)
-   {
-      printf("No search found\n");
-   }
-   else
-   {
-      printf("The digit is located at %d position",++i);
-   }
+ linear_search(A,&n,&d);
+   
 
 
    return 0;
