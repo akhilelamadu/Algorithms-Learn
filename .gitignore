@@ -1,2 +1,6 @@
 /Rough
 /vscode
+
+#ignoring executable
+
+.exe
